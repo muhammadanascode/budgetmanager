@@ -17,25 +17,39 @@ const productAmount = () => {
     let productCost = document.getElementById("productAmount")
     let balance = document.getElementById("balance")
     let expense = document.getElementById("expense")
-    let a = parseInt(balance.innerHTML) - productCost.value
-    balance.innerHTML = a
-    let b = parseInt(expense.innerHTML) + parseInt(productCost.value)
-    expense.innerHTML = b
-    let date = new Date()
+    let a = parseInt(balance.innerHTML) - parseInt(productCost.value)
 
-    let expenseList = document.querySelector(".expenseList")
-    let html = `  <div class = "expenseItem">
+    if (a < 0) {
+        let a = document.getElementById("alert")
+        a.style.display = "block"
+        setTimeout(() => {
+            a.style.display = "none"
+        }, 2000);
+        productCost.value = ""
+        productName.value = ""
+
+    }
+    else {
+
+
+        balance.innerHTML = a
+        let b = parseInt(expense.innerHTML) + parseInt(productCost.value)
+        expense.innerHTML = b
+        let date = new Date()
+
+        let expenseList = document.querySelector(".expenseList")
+        let html = `  <div class = "expenseItem">
                      <div class = "flexExpense">
                        <p id = "expenseItemName"> Product:  ${productName.value} </p>
                        <p id = "expenseItemCost">  Cost:   ${productCost.value}</p>
                      </div>
                    <p id = "date"> Purchased On:  ${date.toLocaleDateString()} </p>
                 </div>`
-    expenseList.insertAdjacentHTML("afterend", html)
+        expenseList.insertAdjacentHTML("afterend", html)
 
 
-    productName.value = ""
-    productCost.value = ""
+        productName.value = ""
+        productCost.value = ""
 
-
+    }
 }

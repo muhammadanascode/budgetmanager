@@ -17,17 +17,21 @@
 <body>
     <div class="container">
         <h1 id="mainhead">-------------------BUDGET MANAGER------------------</h1>
+        <div class="alert alert-primary "  id="alert" role="alert">
+            You are getting out of budget....
+        </div>
         <div class="flex">
             <div class="budget">
                 <h5>Budget</h5>
-                <input  value="" id="budgetinput" type="number" placeholder="Enter your income">
+                <input value="" id="budgetinput" type="number" placeholder="Enter your income">
                 <button onclick="budgetAmount()" type="button" class="btn btn-primary">Set budget</button>
 
             </div>
             <div class="Expenses">
                 <h5>Expenses</h5>
                 <input value="" id="productName" type="text" placeholder="Enter the name of product">
-                <input value="" onchange="productAmount()" id="productAmount" type="number" placeholder="Enter the cost of product">
+                <input value="" onchange="productAmount()" id="productAmount" type="number"
+                    placeholder="Enter the cost of product">
                 <button type="button" class="btn btn-primary">Add Expense</button>
             </div>
         </div>
@@ -42,7 +46,7 @@
 
             <div>
                 <p class="head">Expenses</p>
-                <p  id="expense">0</p>
+                <p id="expense">0</p>
             </div>
 
             <div>
@@ -54,7 +58,7 @@
     </div>
 
     <div class="expenseList">
-    <h3>Expense List</h3>
+        <h3>Expense List</h3>
     </div>
 
 </body>
