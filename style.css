@@ -1,0 +1,109 @@
+.container {
+    width: 100vw;
+    text-align: center;
+}
+
+#mainhead{
+    margin-top: 15px;
+    color:rgb(3, 112, 255) ;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.budget {
+    width: 25%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 6px;
+}
+
+#budgetinput {
+    border: 0.5px solid rgb(196, 196, 196);
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 15px;
+}
+
+#productName {
+    border: 0.5px solid rgb(196, 196, 196);
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 15px;
+}
+
+#productAmount {
+    border: 0.5px solid rgb(196, 196, 196);
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 15px;
+}
+
+.Expenses {
+    width: 25%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 6px;
+}
+
+.dashboard {
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    height: 100px;
+    background-color: rgb(3, 112, 255);
+    color: rgb(255, 255, 255);
+
+}
+
+.head {
+    font-weight: bold;
+}
+
+.expenseList{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.expenseItem{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 72, 114);
+    height: 70px;
+    margin-top: 10px;
+}
+.flexExpense{
+    display: flex;
+    align-items: center;
+}
+#expenseItemName{
+    margin-left: 10px;
+    font-weight: bold;
+    
+}
+#expenseItemCost{
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+#date{
+    margin-bottom: -10px;
+    margin-left: 10px;
+    color: rgb(151, 0, 0);
+}
